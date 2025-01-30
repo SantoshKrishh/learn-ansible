@@ -1,0 +1,8 @@
+- name: vers
+  hosts: all
+  vars: 
+   testvar: ke baal
+  tasks:
+   - name: this is vars
+     ansible.builtin.debug:
+      msg: laude {{testvar}} 
