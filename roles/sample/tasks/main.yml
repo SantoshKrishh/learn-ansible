@@ -1,0 +1,4 @@
+#demo for roles explanation
+- name: Print hello this is a role example
+  ansible.builtin.debug:
+    msg: Hello this is a role example
