@@ -1,11 +1,11 @@
-name: Demo on load another file
-hosts: all
-tasks: 
-  - name: Print Hello World
-    ansible.builtin.debug:
+- name: Demo on load another file
+  hosts: all
+  tasks: 
+   - name: Print Hello World
+     ansible.builtin.debug:
       msg: "Hello, World!"
 
-  - name: Include another file
-    ansible.builtin.include_tasks: 
-    file: another.yml
+   - name: Include another file
+     ansible.builtin.include_tasks: 
+     file: another.yml
     
